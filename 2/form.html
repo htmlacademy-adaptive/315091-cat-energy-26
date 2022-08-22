@@ -44,94 +44,94 @@
         <h1 class="program-selection__heading">Подбор программы</h1>
         <p class="program-selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="program-selection__basic-info-field">
+          <fieldset class="program-selection__field program-selection__field--basic-info">
             <legend class="visually-hidden">Общие данные о коте</legend>
             <ul class="program-selection__basic-info-list">
               <li class="program-selection__basic-info-item">
-                <label for="program-selection-name">Имя:*</label>
-                <input class="form-input" id="program-selection-name" type="text" name="name" placeholder="Барсик">
+                <label class="program-selection__label" for="program-selection-name">Имя:*</label>
+                <input class="program-selection__control" id="program-selection-name" type="text" name="name" placeholder="Барсик">
               </li>
               <li class="program-selection__basic-info-item">
-                <label for="program-selection-weight">Вес (кг):*</label>
-                <input class="form-input" id="program-selection-weight" type="text" name="weight" placeholder="7">
+                <label class="program-selection__label" for="program-selection-weight">Вес (кг):*</label>
+                <input class="program-selection__control" id="program-selection-weight" type="text" name="weight" placeholder="7">
               </li>
               <li class="program-selection__basic-info-item">
-                <label for="program-selection-age">Возраст (лет):*</label>
-                <input class="form-input" id="program-selection-age" type="text" name="age" placeholder="7">
+                <label class="program-selection__label" for="program-selection-age">Возраст (лет):*</label>
+                <input class="program-selection__control" id="program-selection-age" type="text" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__program-list-field">
+          <fieldset class="program-selection__field program-selection__field--radio">
             <legend class="visually-hidden">Выбор программы</legend>
-            <ul class="program-selection__program-list">
-              <li class="program-selection__program-item">
+            <ul class="program-selection__list program-selection__list--radio">
+              <li class="program-selection__item program-selection__item--radio">
                 <input id="slim-option" type="radio" name="program" value="slim-option">
-                <label for="slim-option">похудение</label>
+                <label class="program-selection__label program-selection__label--dark-grey-color" for="slim-option">похудение</label>
               </li>
-              <li class="program-selection__program-item">
+              <li class="program-selection__item program-selection__item--radio">
                 <input id="weight-gain-option" type="radio" name="program" value="weight-gain-option">
-                <label for="weight-gain-option">набор массы</label>
+                <label class="program-selection__label program-selection__label--dark-grey-color" for="weight-gain-option">набор массы</label>
               </li>
-              <li class="program-selection__program-item">
+              <li class="program-selection__item program-selection__item--radio">
                 <input id="need-help-option" type="radio" name="program" value="need-help-option">
-                <label for="need-help-option">не знаю (нужен ваш совет)</label>
+                <label class="program-selection__label program-selection__label--dark-grey-color" for="need-help-option">не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="program-selection__contact-field">
-            <legend class="program-selection__heading">Контактные данные (владельца кота)</legend>
+          <fieldset class="program-selection__field program-selection__field--contact">
+            <legend class="program-selection__form-heading">Контактные данные (владельца кота)</legend>
             <p class="program-selection__contact-email">
-              <label for="email">E-mail:*</label>
-              <input class="form-input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+              <label class="program-selection__label" for="email">E-mail:*</label>
+              <input class="program-selection__control" id="email" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM">
             </p>
             <p class="program-selection__contact-telephone">
-              <label for="telephone">Телефон:*</label>
-              <input class="form-input" id="telephone" type="text" name="telephone" placeholder="8 (960) 900-60-90">
+              <label class="program-selection__label" for="telephone">Телефон:*</label>
+              <input class="program-selection__control" id="telephone" type="text" name="tel" placeholder="8 (960) 900-60-90">
             </p>
           </fieldset>
-          <fieldset class="program-selection__comment-field">
-            <legend class="program-selection__heading">Комментарий</legend>
-            <textarea name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="program-selection__field program-selection__field--comment">
+            <legend class="program-selection__form-heading">Комментарий</legend>
+            <textarea class="program-selection__control" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="program-selection__additionally-field">
-            <legend class="program-selection__field-heading">Дополнительно</legend>
-            <ul class="program-selection__additionally-list program-selection__additionally-list--two-rows program-selection__additionally-list--row">
-              <li class="program-selection__additionally-item">
+          <fieldset class="program-selection__field program-selection__field--checkbox">
+            <legend class="program-selection__form-heading">Дополнительно</legend>
+            <ul class="program-selection__list program-selection__list--checkbox">
+              <li class="program-selection__item program-selection__item--checkbox">
                 <input id="sugar-substitute" type="checkbox" name="sugar-substitute">
-                <label for="sugar-substitute">Сахарозаменитель</label>
+                <label class="program-selection__label program-selection__label--black-color"  for="sugar-substitute">Сахарозаменитель</label>
               </li>
-              <li class="program-selection__additionally-item">
+              <li class="program-selection__item program-selection__item--checkbox">
                 <input id="water" type="checkbox" name="water">
-                <label for="water">Питьевая вода</label>
+                <label class="program-selection__label program-selection__label--black-color" for="water">Питьевая вода</label>
               </li>
-              <li class="program-selection__additionally-item">
+              <li class="program-selection__item program-selection__item--checkbox">
                 <input id="milk" type="checkbox" name="milk">
-                <label for="milk">Молоко</label>
+                <label class="program-selection__label program-selection__label--black-color" for="milk">Молоко</label>
               </li>
-              <li class="program-selection__additionally-item">
+              <li class="program-selection__item program-selection__item--checkbox">
                 <input id="vitamins" type="checkbox" name="vitamins">
-                <label for="vitamins">Витамины</label>
+                <label class="program-selection__label program-selection__label--black-color" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
           <button class="program-selection__button button" type="submit">Отправить заявку</button>
-          <small class="program-selection__text program-selection__text--right">* — Обязательные поля</small>
+          <small class="program-selection__text">* — Обязательные поля</small>
         </form>
       </section>
-      <div class="contacts">
-        <div class="contacts__wrapper contacts__wrapper--on-the-map">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address contacts__address--right">ул. Большая Конюшенная, д. 19/8
-            <span class="contacts__address-city contacts__address-city--separately">Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="contacts__map">
-          <img src="img/contacts__map.jpg" width="320" height="362" alt="Карта с отметкой где находится магазин питания для котов">
-        </div>
-      </div>
     </main>
-    <footer class="footer footer--row">
+
+    <footer class="footer">
       <div class="footer__wrapper">
+        <div class="contacts">
+          <div class="contacts__wrapper contacts__wrapper--grey-background">
+            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+              <span class="contacts__address-city">Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="contacts__map">
+          </div>
+        </div>
         <a class="footer__logo-text logo-text" href="index.html">
           <img class="footer__logo-text-image" src="img/logo-text.svg" width="101" height="18" alt="Ссылка на сайт Cat Energy">
         </a>
@@ -165,8 +165,8 @@
           </ul>
         </section>
         <div class="made-by">
-          <a class="made-by__link-text" href="https://htmlacademy.ru">HTML Academy</a>
-          <a class="made-by__link-logo made-by__link-logo--right" href="https://htmlacademy.ru">
+          <a class="made-by__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="made-by__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="images/htmlacademy-logo-icon.svg" width="27" height="34" alt="Ссылка на сайт HTML Academy">
           </a>
         </div>

@@ -49,15 +49,15 @@
           <div class="promo__image-wrapper">
             <img class="promo__image" src="img/promo__image.jpg" width="280" height="270" alt="Оранжевая пластиковая баночка с надписью Cat Energy Pro с курицей">
           </div>
-          <a class="promo__link button">Подобрать программу</a>
+          <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </div>
       <section class="options">
-        <div class="options__wrapper options__wrapper--row">
+        <div class="options__wrapper">
           <h2 class="visually-hidden">Варианты программ</h2>
-          <section class="option option-slim">
+          <section class="option option--slim">
             <h3 class="visually-hidden">Программа похудения</h3>
-            <p class="option__heading option__heading--left">Похудение</p>
+            <p class="option__heading">Похудение</p>
             <p class="option__description">
               Ваш кот весит больше собаки и почти утратил способность лазить
               по деревьям? Пора на диету! Cat Energy Slim поможет вашему
@@ -65,9 +65,9 @@
             </p>
             <a class="option__link" href="#">Каталог SLIM</a>
           </section>
-          <section class="option option-pro">
+          <section class="option option--pro">
             <h3 class="visually-hidden">Программа набора массы</h3>
-            <p class="option__heading option__heading--left">Набор массы</p>
+            <p class="option__heading">Набор массы</p>
             <p class="option__description">
               Заработать авторитет среди дворовых котов и даже собак?
               Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -80,11 +80,11 @@
         <div class="features__wrapper">
           <h2 class="visually-hidden">Особенности товара</h2>
           <p class="features__heading">Как это работает</p>
-          <ul class="features__list features__list--two-rows features__list--row">
-            <li class="features__item features__item--numbered">Функциональное питание содержит только полезные питательные вещества.</li>
-            <li class="features__item features__item--numbered">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            <li class="features__item features__item--numbered">Замените один-два приема обычной еды на наше функциональное питание.</li>
-            <li class="features__item features__item--numbered">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          <ul class="features__list">
+            <li class="features__item features__item--first">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="features__item features__item--second">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="features__item features__item--third">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="features__item features__item--fourth">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
           </ul>
         </div>
       </section>
@@ -107,35 +107,29 @@
                 <span class="promo-example__stats-text">затрачено времени</span>
               </div>
             </div>
-            <p class="promo-example__cost-text promo-example__cost-text--right promo-example__cost-text--bottom-left">Затраты на питание:
-              <span class="promo-example__cost-value promo-example__cost-value--bottom promo-example__cost-value--separately-right">15 000 руб.</span>
+            <p class="promo-example__cost-text">Затраты на питание:
+              <span class="promo-example__cost-value">15 000 руб.</span>
             </p>
           </div>
-          <div class="promo-example__image-wrapper promo-example__image-wrapper--right">
+          <div class="promo-example__image-wrapper">
             <img class="promo-example__image" src="img/promo-example__image.jpg" width="280" height="232" alt="Полный котик худой котик">
-          </div>
-          <div class="promo-example__comparison promo-example__comparison--right">
-            <span class="promo-example__comparison-text promo-example__comparison-text--underlined">Было</span>
-            <div class="promo-example__comparison-toggle promo-example__comparison-toggle--slider"></div>
-            <span class="promo-example__comparison-text promo-example__comparison-text--underlined">Стало</span>
           </div>
         </div>
       </section>
-      <div class="contacts">
-        <div class="contacts__wrapper contacts__wrapper--on-the-map">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address contacts__address--right">ул. Большая Конюшенная, д. 19/8
-            <span class="contacts__address-city contacts__address-city--separately">Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="contacts__map">
-          <img src="img/contacts__map.jpg" width="320" height="362" alt="Карта с отметкой где находится магазин питания для котов">
-        </div>
-      </div>
     </main>
 
-    <footer class="footer footer--row">
+    <footer class="footer">
       <div class="footer__wrapper">
+        <div class="contacts">
+          <div class="contacts__wrapper">
+            <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8
+              <span class="contacts__address-city">Санкт-Петербург</span>
+            </p>
+          </div>
+          <div class="contacts__map">
+          </div>
+        </div>
         <a class="footer__logo logo-text" href="index.html">
           <img src="img/logo-text.svg" width="101" height="18" alt="Ссылка на сайт Cat Energy">
         </a>
@@ -169,8 +163,8 @@
           </ul>
         </section>
         <div class="made-by">
-          <a class="made-by__link-text" href="https://htmlacademy.ru">HTML Academy</a>
-          <a class="made-by__link-logo made-by__link-logo--right" href="https://htmlacademy.ru">
+          <a class="made-by__link-text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="made-by__link-logo" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="images/htmlacademy-logo-icon.svg" width="27" height="34" alt="Ссылка на сайт HTML Academy">
           </a>
         </div>
